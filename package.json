@@ -8,7 +8,8 @@
         "dev": "tsc --watch --pretty --project ./",
         "lint": "tslint --project ./",
         "prepublishOnly": "npm run build",
-        "precommit": "npm run lint"
+        "precommit": "npm run lint",
+        "test": "npm run lint"
     },
     "keywords": [
         "wordpress",
