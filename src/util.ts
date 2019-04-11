@@ -17,11 +17,11 @@ const dotEnvOut = (salts: any) => {
 
 const phpOutput = (salts: any) => {
   const maxLength = getLongestString(Object.keys(salts)).length;
-
   const output: Array<string> = [];
 
   Object.keys(salts).forEach(key => {
-    const whitespace = ' '.repeat(maxLength - key.length);
+    const whitespace = (getConfig('alignPHP')) ? ' '.repeat(maxLength - key.length) : '';
+
     output.push(`define('${key}', ${whitespace}'${salts[key]}');`);
   });
 
@@ -38,8 +38,17 @@ const yamlOutput = (salts: any) => {
   return output.join('\n');
 };
 
+const getConfig = (key: string|undefined) => {
+  if (key && key.length) {
+    return atom.config.get(`wordpress-salts.${key}`);
+  }
+
+  return atom.config.get(`wordpress-salts`);
+};
+
 export {
   dotEnvOut,
   phpOutput,
-  yamlOutput
+  yamlOutput,
+  getConfig
 };

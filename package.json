@@ -33,7 +33,7 @@
         ]
     },
     "dependencies": {
-        "wp-salts": "^0.3.1"
+        "wp-salts": "^0.3.3"
     },
     "devDependencies": {
         "@types/atom": "^1.31.1",

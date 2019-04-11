@@ -4,11 +4,36 @@ import { wpSalts } from 'wp-salts';
 import {
   dotEnvOut,
   phpOutput,
-  yamlOutput
+  yamlOutput,
+  getConfig
 } from './util';
 
 module.exports = {
-  config: {},
+  config: {
+    saltLength: {
+      title: 'Salt Length',
+      description: 'Default length of salts, between 64 and 4096 characters',
+      type: 'number',
+      default: 64,
+      minimum: 64,
+      maximum: 4096,
+      order: 1
+    },
+    jsonIndentation: {
+      title: 'JSON Indentation',
+      description: 'Default indentation of JSON strings',
+      type: 'number',
+      default: 2,
+      minimum: 0,
+      order: 2
+    },
+    alignPHP: {
+      title: 'Align PHP',
+      description: 'Align definitions for better visual grepping',
+      type: 'boolean',
+      default: true
+    }
+  },
   subscriptions: null,
 
   activate(): void {
@@ -31,7 +56,7 @@ module.exports = {
     }
 
     const scope = textEditor.getGrammar().scopeName;
-    const salts = wpSalts();
+    const salts = wpSalts('', getConfig('saltLength'));
     let output = '';
 
     switch (scope) {
@@ -40,7 +65,7 @@ module.exports = {
         break;
 
       case 'source.json':
-        output = JSON.stringify(salts, null, 2);
+        output = JSON.stringify(salts, null, getConfig('jsonIndentation'));
         break;
 
       case 'source.php':
@@ -57,6 +82,6 @@ module.exports = {
         break;
     }
 
-    textEditor.setText(output);
+    textEditor.insertText(output);
   }
 };
