@@ -28,7 +28,7 @@ module.exports = {
       order: 2
     },
     alignPHP: {
-      title: 'Align PHP',
+      title: 'Align PHP Definitions',
       description: 'Align definitions for better visual grepping',
       type: 'boolean',
       default: true
