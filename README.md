@@ -7,7 +7,7 @@
 
 # Description
 
-Context-aware insertation of WordPress salts, supports PHP, YAML (for [Trellis](https://roots.io/trellis/)), DotEnv and JSON files.
+Inserts WordPress salts in PHP, YAML, DotEnv or JSON files
 
 ## Installation
 
