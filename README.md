@@ -7,7 +7,7 @@
 
 # Description
 
-Inserts WordPress salts in PHP, YAML (for [Trellis](https://roots.io/trellis/)), DotEnv or JSON files.
+Context-aware insertation of WordPress salts, supports PHP, YAML (for [Trellis](https://roots.io/trellis/)), DotEnv and JSON files.
 
 ## Installation
 
@@ -17,7 +17,7 @@ Install `wordpress-salts` from Atom's [Package Manager](http://flight-manual.ato
 
 ## Usage
 
-Run the *WordPress Salts: Insert* from the [command palette](http://flight-manual.atom.io/getting-started/sections/atom-basics/#_command_palette) to insert salts at the current cursor position. The outout format is determined by the scope of the document.
+Run the *WordPress Salts: Insert* from the [command palette](http://flight-manual.atom.io/getting-started/sections/atom-basics/#_command_palette) to insert salts at the current cursor position. The output format is determined by the scope of the document.
 
 ## License
 
