@@ -2,7 +2,7 @@
     "name": "wordpress-salts",
     "main": "./lib/wordpress-salts",
     "version": "0.2.2",
-    "description": "Inserts WordPress salts in PHP, YAML, DotEnv or JSON files",
+    "description": "Context-aware WordPress salts insertion for PHP, YAML and DotEnv files",
     "scripts": {
         "build": "tsc --pretty --project ./",
         "dev": "tsc --watch --pretty --project ./",
