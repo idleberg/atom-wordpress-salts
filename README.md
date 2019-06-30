@@ -7,7 +7,7 @@
 
 # Description
 
-Context-aware WordPress salts insertion for PHP, YAML and DotEnv files.
+Context-aware WordPress salts insertion for PHP, YAML and DotEnv files without the need of an internet-connection
 
 ## Installation
 
