@@ -36,7 +36,7 @@ module.exports = {
   },
   subscriptions: null,
 
-  activate(): void {
+  async activate(): Promise<void> {
     this.subscriptions = new CompositeDisposable;
 
     this.subscriptions.add(atom.commands.add('atom-workspace', {

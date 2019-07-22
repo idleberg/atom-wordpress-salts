@@ -1,10 +1,14 @@
-# Package Managers
+# Development
+*.map
+lib/
+tsconfig.tsbuildinfo
+
+# Package managers
 bower_components/
 node_modules/
+npm-debug.log*
+package-lock.json
+vendor/
 
-# Error Logs
-*npm-debug.log*
-yarn-error.log
-
-# Yeoman
-.yo-rc.json
+# Project specific
+todo.md
