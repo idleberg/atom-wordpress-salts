@@ -23,6 +23,7 @@ Run the *WordPress Salts: Insert* from the [command palette](http://flight-manua
 
 - [sublime-wordpress-salts](https://github.com/idleberg/sublime-wordpress-salts)
 - [vscode-wordpress-salts](https://marketplace.visualstudio.com/items?itemName=idleberg.wordpress-salts)
+- [wp-salts-cli](https://www.npmjs.com/package/wp-salts-cli)
 
 ## License
 
