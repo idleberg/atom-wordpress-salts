@@ -7,7 +7,7 @@
 
 # Description
 
-Context-aware WordPress salt key insertion for PHP, YAML and DotEnv files without the need of an internet-connection
+Context-aware WordPress salt key generation for PHP, YAML and DotEnv files without the need of an internet-connection
 
 ## Installation
 

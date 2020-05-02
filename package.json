@@ -2,7 +2,7 @@
     "name": "wordpress-salts",
     "main": "./lib/wordpress-salts",
     "version": "0.3.0",
-    "description": "Context-aware WordPress salt key insertion for PHP, YAML and DotEnv files without the need of an internet-connection",
+    "description": "Context-aware WordPress salt key generation for PHP, YAML and DotEnv files without the need of an internet-connection",
     "scripts": {
         "build": "webpack --mode production",
         "dev": "webpack --mode none --watch",
